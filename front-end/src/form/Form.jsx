@@ -16,7 +16,7 @@ function Form() {
     <div>
         <form className='d-flex justify-content-center pt-2 gap-2'>
             <input onChange={(e) =>setTask(e.target.value)}
-                className="p-2 w-25" type="text" placeholder="Enter a task to add"/>
+                className="p-2 txt-input" type="text" placeholder="Enter a task to add"/>
             <button onClick={handleAddClick} type = "button" className="text-white bg-black p-1">ADD</button>
 
         </form>

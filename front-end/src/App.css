@@ -5,4 +5,22 @@
 
 .icons{
     cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.cut-task{
+    text-decoration: line-through;
+}
+
+.txt-input{
+    width: 500px;
+}
+
+.task{
+    width: 550px;
+    cursor: pointer;
+}
+
+.task:hover{
+    background-color: rgb(53, 49, 49);
 }

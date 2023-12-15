@@ -6,7 +6,9 @@ function Form() {
   const [task, setTask] = useState()
   function handleAddClick(){
     axios.post('http://localhost:3001/add', {task: task})
-    .then(result => console.log(result))
+    .then(result => {
+      location.reload;
+    })
     .catch(err =>{
       alert("Failed to add the task, try again!")
     })
@@ -18,7 +20,6 @@ function Form() {
             <input onChange={(e) =>setTask(e.target.value)}
                 className="p-2 txt-input" type="text" placeholder="Enter a task to add"/>
             <button onClick={handleAddClick} type = "button" className="text-white bg-black p-1">ADD</button>
-
         </form>
     </div>
     

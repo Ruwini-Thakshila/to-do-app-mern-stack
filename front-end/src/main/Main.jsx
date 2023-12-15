@@ -47,7 +47,7 @@ function Main() {
                 :
                   <i className="icons text-white bi bi-circle-fill"></i>
                 }
-                <p className={task.check ? "cut-task": ""}>{task.description}</p>
+                <div className={task.check ? "cut-task": ""}>{task.description}</div>
               </div>
               <div>
                 <i onClick={() => handleDelete(task._id)} className="icons text-white bi bi-trash-fill"></i>
